@@ -1,11 +1,11 @@
-const {Schema, modle}= require ("mongoose") ;       
+const {Schema, model} = require("mongoose");
 
 const todoSchema=new Schema({
-    title: String,
-    isCompletd: Boolean
+  title: String,
+  isCompleted: Boolean
 })
 
-//Model
-const Todo=modle('Todo',TodoSchema)
+// Model
+const Todo=model('Todo',todoSchema)
 
-modle.exports =Todo
+module.exports = Todo
