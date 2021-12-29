@@ -195,6 +195,7 @@ app.get("/completed", (req, res) => {
     }
   });
 });
+
 app.get("/not_completed", (req, res) => {
   Todo.find({ isCompleted: false }, (err, data) => {
     if (err) {
